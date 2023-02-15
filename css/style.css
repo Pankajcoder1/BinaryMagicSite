@@ -1,0 +1,172 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow-x: scroll;
+    /* min-height: 100vh; */
+}
+
+/* css of header section start */
+.navbar {
+    /* position: fixed; */
+    /* z-index: 1000; */
+    width: 100%;
+    top: 0px;
+}
+
+.header {
+    background-color: #f0f8ff;
+    margin-bottom: 10px;
+}
+
+.nav-item:hover {
+    background-color: #ffe4c4;
+    font-weight: bold;
+}
+
+@media(max-width: 1200px) {
+    .nav-link {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 992px) and (min-width: 767px) {
+    .nav-link {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 767px) {
+    .nav-link {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 576px) {
+    .nav .nav-item {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .nav .nav-item .nav-link {
+        padding: 0px;
+        font-size: 12px;
+    }
+}
+
+/* css of header section end */
+
+.page-main-div {
+    min-height: 95vh;
+}
+
+.page-main-div div .container {
+    padding: 25px;
+    margin-bottom: 45px;
+    background-color: #ffe4c4;
+    border-radius: 8px;
+}
+
+.page-main-div div .container h1 {
+    color: #000;
+}
+
+.navbar-nav li a {
+    font-weight: bold;
+}
+
+.content-row {
+    padding: 15px;
+    background-color: aliceblue;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.content-row-container-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content-row-container-name:hover {
+    background-color: #ffe4c4;
+}
+
+.content-row-video-link {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.content-row-video-link :hover {
+    text-decoration: none;
+    color: black;
+}
+
+td:nth-child(4),
+td:nth-child(3) {
+    text-align: center;
+}
+
+.fa-external-link-square {
+    font-size: 20px;
+}
+
+.fa-youtube-play {
+    color: red;
+    font-size: 20px;
+}
+
+.table tr th:nth-child(1) {
+    width: 5%;
+}
+
+.table tr td:nth-child(2) {
+    width: auto;
+}
+
+.table tr td:nth-child(3) {
+    width: 10%;
+}
+
+.table tr td:nth-child(4) {
+    width: 10%;
+}
+
+
+@media(max-width: 576px) {
+    .table tr th:nth-child(1) {
+        width: 10%;
+    }
+
+    .table tr td:nth-child(2) {
+        width: 60%;
+    }
+
+    .table tr td:nth-child(3) {
+        width: 10%;
+    }
+
+    .table tr td:nth-child(4) {
+        width: 10%;
+    }
+}
+
+
+.footer {
+    height: 50px;
+}
+
+.footer div {
+    font-size: 14px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    background-color: #ffe4c4;
+}
+
+@media (max-width: 500px) {
+    .navbar-header {
+        background-color: red;
+        width: 30%;
+        margin: 0px;
+    }
+}
