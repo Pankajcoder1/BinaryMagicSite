@@ -1,3 +1,12 @@
+/* 
+    Author: Pankaj Kumar
+*/
+
+:root{
+    --background-color: #ffe4c4;
+    --container-background-color: #f0f8ff;
+}
+
 body {
     padding: 0px;
     margin: 0px;
@@ -14,12 +23,12 @@ body {
 }
 
 .header {
-    background-color: #f0f8ff;
+    background-color: var(--container-background-color);
     margin-bottom: 10px;
 }
 
 .nav-item:hover {
-    background-color: #ffe4c4;
+    background-color: var(--background-color);
     font-weight: bold;
 }
 
@@ -62,12 +71,14 @@ body {
 .page-main-div div .container {
     padding: 25px;
     margin-bottom: 45px;
-    background-color: #ffe4c4;
+    background-color: var(--background-color);
     border-radius: 8px;
 }
 
 .page-main-div div .container h1 {
     color: #000;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .navbar-nav li a {
@@ -76,9 +87,11 @@ body {
 
 .content-row {
     padding: 15px;
-    background-color: aliceblue;
+    background-color: var(--container-background-color);
     margin-bottom: 25px;
     border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 .content-row-container-name {
@@ -87,7 +100,7 @@ body {
 }
 
 .content-row-container-name:hover {
-    background-color: #ffe4c4;
+    background-color: var(--background-color);
 }
 
 .content-row-video-link {
@@ -156,16 +169,15 @@ td:nth-child(3) {
 
 .footer div {
     font-size: 14px;
-    height: 30px;
+    height: 35px;
     text-align: center;
     margin: auto;
-    padding-top: 5px;
-    background-color: #ffe4c4;
+    padding-top: 8px;
+    background-color: var(--background-color);
 }
 
 @media (max-width: 500px) {
     .navbar-header {
-        background-color: red;
         width: 30%;
         margin: 0px;
     }
