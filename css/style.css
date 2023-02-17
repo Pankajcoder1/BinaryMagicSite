@@ -64,6 +64,17 @@ body {
 
 /* css of header section end */
 
+/* css for conenction div start */
+/* .connection-div{
+    background-color: var(--background-color);
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} */
+
+/* css for connection div end */
+
 .page-main-div {
     min-height: 95vh;
 }
