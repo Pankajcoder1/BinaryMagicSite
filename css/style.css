@@ -99,15 +99,6 @@ td:nth-child(3) {
     width: 10%;
 }
 
-.pill {
-    display: inline-block;
-    border-radius: 20px;
-    padding: 5px 10px;
-    margin-right: 10px;
-    background-color: rgb(228, 243, 176);
-    font-weight: bold;
-    font-size: 16px;
-}
 
 .modern-list {
     list-style: none;
@@ -181,7 +172,7 @@ td:nth-child(3) {
     border-radius: 20px;
     padding: 5px 10px;
     margin-right: 10px;
-    background-color: rgb(228, 243, 176);
+    background-color: #FFF8DC;
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 10px;
