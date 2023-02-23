@@ -56,12 +56,12 @@
         <a href="#" class="navbar-brand">
           <img src="image/BinaryMagic-circle.png" alt="logo" style="width:40px;">
         </a>
-    
+
         <!-- Add a button to toggle the collapsible menu -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible-menu">
           <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <!-- Add the collapsible menu -->
         <div class="collapse navbar-collapse" id="collapsible-menu">
           <ul class="nav ml-auto">
@@ -97,37 +97,77 @@
     <div class="page-title-div">
       <div class="container">
         <h1 class="text-center sheet-name">STL Sheet</h1>
-        <!-- <h4 class="text-center">By: BinaryMagic (Pankaj Kumar)</h4>         -->
-        <p class="text-center">This page contain list of problem for each STL container.</p>
       </div>
     </div>
 
     <!-- about STL -->
 
     <div class="container">
-      <h3>Brief about STL 👇</h3>
-      <div>
-        STL stands for <b>Standard Template Library</b>, is a powerful library in C++ that <b>provides a collection of generic algorithms and data structures</b>. It is one of the most widely used libraries in C++ due to its versatility, efficiency, and ease of use. In this blog, we'll take a closer look at the various components of the STL and see how they can be
-        used to simplify programming tasks.
-      </div>
-      <div class="embed-responsive embed-responsive-16by9 text-center">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uDUYQtZ7eUk"></iframe>
+
+      <div class="row">
+
+        <div class="col-md">
+          <h3>Common doubt in STL 👇</h3>
+          <ol class="modern-list">
+            <li>
+
+              <div class="modern-list-item">
+                <a class="modern-list-item-name" data-toggle="collapse" href="#firstQuestion" role="button"
+                  aria-controls="firstQuestion">
+                  What is STL ? <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </a>
+                <div class="modern-list-item-description collapse show" id="firstQuestion">
+                  STL stands for <b class="important-point">Standard Template Library</b>, is a powerful library in C++ which is collection of <b class="important-point">data structure, algorithms</b>.
+                </div>
+              </div>
+
+
+              <div class="modern-list-item">
+                <a class="modern-list-item-name" data-toggle="collapse" href="#secondQuestion" role="button" aria-expanded="false" aria-controls="secondQuestion">
+                  Components of STL ? <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </a>
+                <div class="modern-list-item-description collapse" id="secondQuestion">
+                  Their are four components of stl.
+                  <div>
+                    <span class="pill">Container</span>
+                    <span class="pill">Algorithms</span>
+                    <span class="pill">Iterator</span>
+                    <span class="pill">Functors</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modern-list-item">
+                <a class="modern-list-item-name" data-toggle="collapse" href="#thirdQuestion" role="button" aria-expanded="false"
+                  aria-controls="thirdQuestion">
+                  Why should choose STL ? <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </a>
+                <div class="modern-list-item-description collapse" id="thirdQuestion">
+                  By using this library, you can save time, <b >gain best time and space complexity</b>, finish work in very little line of code. It is mainly known for its <b >versatility, efficiency, and ease of use</b>.
+                </div>
+              </div>
+
+            </li>
+          </ol>
+          
+        </div>
+
+        <div class="col-md">
+          <div class="embed-responsive embed-responsive-16by9 text-center">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uDUYQtZ7eUk"></iframe>
+          </div>
+        </div>
       </div>
       
+      <hr>
+
       <div>
-        Their are mainly four components in STL.
-        <ol>
-          <li>Container</li>
-          <li>Algorithms</li>
-          <li>Iterator</li>
-          <li>Functors</li>
-        </ol>
         <h3>Practice question on each container</h3>
       </div>
     </div>
 
     <!-- grid of container start -->
-    <div class="py-5" style="margin-top: 5px;">
+    <div class="" style="margin-top: 5px; padding-top: 10px;">
       <div class="container">
         <div class="row hidden-md-up justify-content-center">
 
@@ -138,13 +178,15 @@
               <div class="card-body">
                 <h3>Array</h3>
                 <p class="card-text">
-                  This container provide you facility to <b>create N-Dimensional array quicky</b> and provide ease in many operation like accessing, value assignment and other.
+                  This container provide you facility to <b>create N-Dimensional array quicky</b> and provide ease in
+                  many operation like accessing, value assignment and other.
                 </p>
-                <a class="btn" href="array.html">Practice Question <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                <a class="btn" href="array.html">Practice Question <i class="fa fa-arrow-right"
+                    aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
-    
+
           <!-- grid cell -->
           <div class="col-auto mb-3">
             <div class="card" style="width: 18rem;">
@@ -152,9 +194,11 @@
               <div class="card-body">
                 <h3>Deque</h3>
                 <p class="card-text">
-                  This container is simply <b>implementation of Double ended queue</b>, which provide you <b>push and pop operation from both side</b>.
+                  This container is simply <b>implementation of Double ended queue</b>, which provide you <b>push and
+                    pop operation from both side</b>.
                 </p>
-                <a class="btn" href="deque.html">Practice Question <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                <a class="btn" href="deque.html">Practice Question <i class="fa fa-arrow-right"
+                    aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -168,7 +212,8 @@
                 <p class="card-text">Some quick example text to build on the card title and make up the
                   bulk of the card'scontent.Some quick example text to buildSome quick example text to build
                 </p>
-                <a class="btn" href="list.html">Practice Question <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                <a class="btn" href="list.html">Practice Question <i class="fa fa-arrow-right"
+                    aria-hidden="true"></i></a>
               </div>
             </div>
           </div>

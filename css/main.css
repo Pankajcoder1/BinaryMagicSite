@@ -10,11 +10,13 @@
 .card-body .btn{
     background-color: #fff;
     border-radius: 5px;
-    border: solid 1.5px #000;
-    color: blue;
+    border: solid 2px #9acd32;
+    color: green;
 }
 
 .card:hover .card-body .btn{
-    background-color: #ffe4c4;
-    border: solid 1.5px #ffe4c4;
+    background-color: green;
+    border: solid 1.5px green;
+    font-weight: bold;
+    color: #fff;
 }

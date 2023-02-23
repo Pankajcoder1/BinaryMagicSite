@@ -2,16 +2,16 @@
     Author: Pankaj Kumar
 */
 
-:root{
-    --background-color: #ffe4c4;
-    --container-background-color: #f0f8ff;
+:root {
+    --background-color: green;
+    --code-color: #df3079;
 }
 
 body {
     padding: 0px;
     margin: 0px;
     overflow-x: scroll;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
 }
 
 /* css of header section start */
@@ -25,23 +25,19 @@ body {
     margin-bottom: 10px;
 }
 
-.nav-item{
+.nav-item {
     font-weight: bold;
 }
 
 .nav-item:hover {
-    background-color: var(--background-color);
+    background-color: green;
     font-weight: bold;
     border-radius: 8px;
 }
-.navbar-nav li a {
-    color: #fff !important;
-}
 
-.navbar-nav li a:hover {
-    color: #ffe4c4 !important;
+.nav-item:hover a {
+    color: #fff;
 }
-
 
 /* Make the collapsible menu vertical */
 @media (max-width: 767.98px) {
@@ -75,10 +71,11 @@ body {
     border-radius: 8px;
 }
 
+
 .page-title-div h1 {
-    color: #000;
     font-weight: bold;
     font-size: 30px;
+    color: #fff;
 }
 
 td:nth-child(3) {
@@ -106,6 +103,95 @@ td:nth-child(3) {
     width: 10%;
 }
 
+.pill {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: rgb(228, 243, 176);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.modern-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.modern-list-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.modern-list-item-name {
+    flex-grow: 1;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.modern-list-item-name i {
+    margin-left: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.modern-list-item-name[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.modern-list-item-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.modern-list-item-description b {
+    font-weight: bold;
+}
+
+/* for code part */
+.modern-code-block {
+    background-color: #ced4da;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.modern-code-block code {
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    color: #df3079;
+}
+
+.important-point {
+    color: green;
+}
+
+.pill {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: rgb(228, 243, 176);
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
 .footer {
     height: 50px;
 }
@@ -117,6 +203,10 @@ td:nth-child(3) {
     margin: auto;
     padding-top: 8px;
     background-color: var(--background-color);
+    color: #fff;
+}
+.footer div a{
+    color: #000;
 }
 
 @media (max-width: 500px) {
@@ -125,3 +215,5 @@ td:nth-child(3) {
         margin: 0px;
     }
 }
+
+/* end css code */
