@@ -160,7 +160,7 @@ td:nth-child(3) {
 .modern-code-block code {
     font-family: 'Courier New', monospace;
     font-size: 16px;
-    color: #df3079;
+    color: red;
 }
 
 .important-point {
