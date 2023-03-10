@@ -8,16 +8,23 @@
 <head>
     <!-- SEO stuff start -->
 
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This is a website for STL sheet.">
-    <meta name="keywords" content="STL, C++, Data Structure, BinaryMagic, STL sheet">
-    <meta name="author" content="BinaryMagic">
+    <meta name="title" content="STL Sheet | Array Container - practice coding questions of C++ array container here, free">
+    <meta name="description"
+        content="Check out some of the best programming questions you should practice to get better at STL arrays">
+    <meta name="keywords" content="stl,c++,progammming question,stl sheet,stl container, binarymagic, array">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="binarymagic (pankaj kumar)">
+    
+    <link rel="canonical" href="https://binarymagic.in/array.html">
 
     <!-- SEO stuff end -->
 
     <!-- Title stuff -->
-    <title>Array Container |STL Sheet by Binary Magic (Pankaj Kumar) </title>
+    <title>STL Sheet | Array Container - practice coding questions of C++ array container here, free</title>
+
     <link rel="icon" href="image/BinaryMagic-circle.png" type="image/x-icon">
 
     <!-- cdn link -->
@@ -27,7 +34,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/generateTableRow.js"></script>
+    <script src="./js/generateTableRow.js"></script>
+    <script src="./js/components/headerComponent.js"></script>
 
     <style>
 
@@ -37,42 +45,7 @@
 <body>
     <!-- Header Start -->
 
-    <div class="header">
-        <nav class="navbar navbar-light navbar-expand-md">
-            <div class="container">
-                <a href="index.html" class="navbar-brand">
-                    <img src="image/BinaryMagic-circle.png" alt="logo" style="width:40px;">
-                </a>
-
-                <!-- Add a button to toggle the collapsible menu -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible-menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Add the collapsible menu -->
-                <div class="collapse navbar-collapse" id="collapsible-menu">
-                    <ul class="nav ml-auto">
-                        <li class="nav-item">
-                            <a href="https://www.youtube.com/@binmagic" class="nav-link active" target="_blank">YouTube
-                                Channel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://www.linkedin.com/in/pankajcoder1/" class="nav-link"
-                                target="_blank">LinkedIn</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://github.com/Pankajcoder1" class="nav-link" target="_blank">Github</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://discord.com/invite/GMSxHE2fgk" class="nav-link" target="_blank">Join
-                                Discord</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
+    <div id="header">
     </div>
 
     <!-- Header End -->
@@ -86,7 +59,7 @@
 
         <div class="page-title-div">
             <div class="container">
-                <h1 class="text-center">Array Question List</h1>
+                <h1 class="text-center">Array questions</h1>
             </div>
         </div>
 
@@ -225,6 +198,11 @@
         </div>
     </footer>
     <!-- footer section end -->
+
+    <script>
+        const header = document.getElementById("header");
+        header.appendChild(headerComponents());
+    </script>
 
     <script>
         // Define an array of objects with the question and video data
