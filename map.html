@@ -17,7 +17,7 @@
     <!-- SEO stuff end -->
 
     <!-- Title stuff -->
-    <title>Deque Container |STL Sheet by Binary Magic (Pankaj Kumar) </title>
+    <title>Map Container | STL Sheet by Binary Magic (Pankaj Kumar) </title>
     <link rel="icon" href="image/BinaryMagic-circle.png" type="image/x-icon">
 
     <!-- cdn link -->
@@ -28,6 +28,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script src="js/generateTableRow.js"></script>
+
 
     <style>
 
@@ -86,55 +87,111 @@
 
         <div class="page-title-div">
             <div class="container">
-                <h1 class="text-center">Deque Question List</h1>
+                <h1 class="text-center">Map Question List</h1>
             </div>
         </div>
-        
+
         <div class="row">
-        
+
             <div class="col-md">
-                <h3>Common doubt in Deque 👇</h3>
+                <h3>Common doubt in Map 👇</h3>
                 <ol class="modern-list">
                     <li>
-            
                         <div class="modern-list-item">
                             <a class="modern-list-item-name" data-toggle="collapse" href="#firstQuestion" role="button"
                                 aria-controls="firstQuestion">
-                                What is deque ? <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                About stack container <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
                             <div class="modern-list-item-description collapse show" id="firstQuestion">
-                                Deque stands for <b class="important-point">Double ended queue</b>. It is a sequence container that supports <b class="important-point">insertion and deletion of elements from both ends</b> with <b class="important-point">constant time complexity</b>
+                                STL provide stack container which is just implementation of stack data structure, which
+                                <b class="important-point">allow to perform LIFO (last in first out) operation</b> on
+                                it.
                             </div>
                         </div>
-            
-            
+
+
                         <div class="modern-list-item">
                             <a class="modern-list-item-name" data-toggle="collapse" href="#secondQuestion" role="button"
                                 aria-expanded="false" aria-controls="secondQuestion">
-                                Use vector inside deque syntax<i class="fa fa-caret-down" aria-hidden="true"></i>
+                                Main operation on stack container <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
                             <div class="modern-list-item-description collapse" id="secondQuestion">
-                                <div class="modern-code-block">
-                                    <code>deque&lt;vector&lt;int&gt;&gt; myDeque;</code><br>
-                                    <code>vector&lt;int&gt; v = {1, 2, 3, 4, 5};</code><br>
-                                    <code>myDeque.push_back(v);</code>
-                                </div>
+
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <b>size()</b>: return size of stack.
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div>
+                                            <b>empty()</b>: check if stack is empty or not, return boolean value
+                                            accordingly.
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div>
+                                            <b>top()</b>: return top element of stack.
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div>
+                                            <b>push(element)</b>: add a element to top of stack.
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div>
+                                            <b>pop()</b>: erase top element of stack.
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+
+                        <div class="modern-list-item">
+                            <a class="modern-list-item-name" data-toggle="collapse" href="#thirdQuestion" role="button"
+                                aria-expanded="false" aria-controls="thirdQuestion">
+                                Difference between stack and queue ?<i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="modern-list-item-description collapse" id="thirdQuestion">
+                                Stack follow LIFO (last in first out) principle where as queue follow FIFO (first in
+                                first out) principle.
+                            </div>
+                        </div>
+
+                        <div class="modern-list-item">
+                            <a class="modern-list-item-name" data-toggle="collapse" href="#fourthQuestion" role="button"
+                                aria-expanded="false" aria-controls="fourthQuestion">
+                                Use vector inside stack, syntax<i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="modern-list-item-description collapse" id="fourthQuestion">
+                                <div class="modern-code-block">
+                                    <code>stack&lt;vector&lt;int&gt;&gt; myStack;</code><br>
+                                    <code>vector&lt;int&gt; v = {1, 2, 3, 4, 5};</code><br>
+                                    <code>myStack.push(v);</code><br>
+                                    <code>vector&lt;int&gt; v2 = myStack.top();</code><br>
+                                    <code>myStack.pop();</code><br>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </li>
                 </ol>
-            
+
             </div>
-        
+
             <div class="col-md">
                 <div class="embed-responsive embed-responsive-16by9 text-center container">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YjkefZZ9-HE"></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-uV5G_blFlc"></iframe>
                 </div>
             </div>
         </div>
         <br>
-
-        
 
         <!-- Page Heading End -->
 
@@ -156,8 +213,8 @@
                                         <th scope="col" class="text-center">Video Solution</th>
                                     </tr>
                                 </thead>
-
                                 <tbody id="table-body"></tbody>
+                                
                             </table>
                         </div>
 
@@ -166,7 +223,6 @@
                 </div>
             </div>
         </div>
-
 
     </div>
 
@@ -187,55 +243,10 @@
         // Define an array of objects with the question and video data
         const questionData = [
             {
-                name: "Deque Implementations",
-                link: "https://practice.geeksforgeeks.org/problems/deque-implementations/1",
-                videoLink: "#"
+                question: 'Linked List Cycle',
+                questionLink: 'https://leetcode.com/problems/linked-list-cycle/',
+                videoLink: 'https://youtu.be/dNZGfwXyMRE'
             },
-            {
-                name: "Double Ended Queue",
-                link: "https://www.hackerearth.com/problem/algorithm/double-ended-queue/",
-                videoLink: "#"
-            },
-            {
-                name: "Deque-STL",
-                link: "https://www.hackerrank.com/challenges/deque-stl/problem",
-                videoLink: "#"
-            },
-            {
-                name: "Permutation Minimization by Deque",
-                link: "https://codeforces.com/problemset/problem/1579/E1",
-                videoLink: "#"
-            },
-            {
-                name: "Design Circular Deque",
-                link: "https://leetcode.com/problems/design-circular-deque/",
-                videoLink: "#"
-            },
-            {
-                name: "Find Consecutive Integers from a Data Stream",
-                link: "https://leetcode.com/problems/find-consecutive-integers-from-a-data-stream/",
-                videoLink: "#"
-            },
-            {
-                name: "Chef and Reversing",
-                link: "https://www.codechef.com/problems/REVERSE",
-                videoLink: "#"
-            },
-            {
-                name: "Design Front Middle Back Queue",
-                link: "https://leetcode.com/problems/design-front-middle-back-queue/description/",
-                videoLink: "#"
-            },
-            {
-                name: "Valeriy and Deque",
-                link: "https://codeforces.com/problemset/problem/1179/A",
-                videoLink: "#"
-            },
-            {
-                name: "Shortest Subarray with Sum at Least K",
-                link: "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/description/",
-                videoLink: "#"
-            }
 
         ];
 
@@ -244,7 +255,7 @@
 
         // Loop through the question data and generate a table row for each one
         questionData.forEach((data, index) => {
-            const row = generateTableRow(data.name, data.link, data.videoLink, index);
+            const row = generateTableRow(data.question, data.questionLink, data.videoLink, index);
             tableBody.appendChild(row);
         });
 

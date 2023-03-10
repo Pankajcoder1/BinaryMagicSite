@@ -17,7 +17,7 @@
     <!-- SEO stuff end -->
 
     <!-- Title stuff -->
-    <title>STL Sheet by Binary Magic (Pankaj Kumar) </title>
+    <title>Array Container |STL Sheet by Binary Magic (Pankaj Kumar) </title>
     <link rel="icon" href="image/BinaryMagic-circle.png" type="image/x-icon">
 
     <!-- cdn link -->
@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/generateTableRow.js"></script>
 
     <style>
 
@@ -156,7 +157,10 @@
                             <div class="modern-list-item-description collapse" id="thirdQuestion">
                                 <div class="modern-code-block">
                                     <code>array&lt;map&lt;int, string&gt;, arraySize&gt; myArray;</code><br>
-                                    <code>map&lt;int, string&gt; myMap1 = {{1, "One"}, {2, "Two"}, {3, "Three"}};</int></code><br>
+                                    <code>
+                                        map&lt;int, string&gt; myMap1 = {{1, "One"}, {2, "Two"}, {3, "Three"}};
+                                    </code>
+                                        <br>
                                     <code>myArray[0]=myMap1;</code><br>
                                 </div>
                             </div>
@@ -195,154 +199,8 @@
                                         <th scope="col" class="text-center">Video Solution</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>
-                                            <a href="https://www.hackerrank.com/challenges/vector-erase/problem"
-                                                target="_blank" title="Question Link">
-                                                Vector-Erase
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
+                                <tbody id="table-body"></tbody>
 
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/running-sum-of-1d-array/"
-                                                target="_blank" title="Question Link">
-                                                Running Sum of 1d Array
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/longest-subsequence-with-limited-sum/"
-                                                target="_blank" title="Question Link">
-                                                Longest Subsequence With Limited Sum
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>
-                                            <a href="https://www.codechef.com/problems/ATTND" target="_blank"
-                                                title="Question Link">
-                                                Attendance
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row">5</th>
-                                        <td>
-                                            <a href="https://atcoder.jp/contests/abc206/tasks/abc206_d" target="_blank"
-                                                title="Question Link">
-                                                KAIBUNsyo
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row">6</th>
-                                        <td>
-                                            <a href="https://www.codechef.com/problems/SPTREE" target="_blank"
-                                                title="Question Link">
-                                                A Special Tree
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row">7</th>
-                                        <td>
-                                            <a href="https://codeforces.com/problemset/problem/4/B" target="_blank" title="Question Link">
-                                                Before an Exam
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <th scope="row">8</th>
-                                        <td>
-                                            <a href="https://codeforces.com/problemset/problem/479/C" target="_blank" title="Question Link">
-                                                Exams
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <th scope="row">9</th>
-                                        <td>
-                                            <a href="https://codeforces.com/problemset/problem/492/C" target="_blank" title="Question Link">
-                                                Vanya and Exams
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <th scope="row">10</th>
-                                        <td>
-                                            <a href="https://codeforces.com/problemset/problem/785/B" target="_blank" title="Question Link">
-                                                Anton and Classes
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
                             </table>
                         </div>
 
@@ -367,6 +225,72 @@
         </div>
     </footer>
     <!-- footer section end -->
+
+    <script>
+        // Define an array of objects with the question and video data
+        const questionData = [
+            {
+                name: "Vector-Erase",
+                link: "https://www.hackerrank.com/challenges/vector-erase/problem",
+                videoLink: "#",
+            },
+            {
+                name: "Running Sum of 1d Array",
+                link: "https://leetcode.com/problems/running-sum-of-1d-array/",
+                videoLink: "#",
+            },
+            {
+                name: "Longest Subsequence With Limited Sum",
+                link: "https://leetcode.com/problems/longest-subsequence-with-limited-sum/",
+                videoLink: "#",
+            },
+            {
+                name: "Attendance",
+                link: "https://www.codechef.com/problems/ATTND",
+                videoLink: "#",
+            },
+            {
+                name: "KAIBUNsyo",
+                link: "https://atcoder.jp/contests/abc206/tasks/abc206_d",
+                videoLink: "#",
+            },
+            {
+                name: "A Special Tree",
+                link: "https://www.codechef.com/problems/SPTREE",
+                videoLink: "#",
+            },
+            {
+                name: "Before an Exam",
+                link: "https://codeforces.com/problemset/problem/4/B",
+                videoLink: "#",
+            },
+            {
+                name: "Exams",
+                link: "https://codeforces.com/problemset/problem/479/C",
+                videoLink: "#",
+            },
+            {
+                name: "Vanya and Exams",
+                link: "https://codeforces.com/problemset/problem/492/C",
+                videoLink: "#",
+            },
+            {
+                name: "Anton and Classes",
+                link: "https://codeforces.com/problemset/problem/785/B",
+                videoLink: "#",
+            }
+        ];
+
+        // Get a reference to the table body element
+        const tableBody = document.getElementById('table-body');
+
+        // Loop through the question data and generate a table row for each one
+        questionData.forEach((data, index) => {
+            const row = generateTableRow(data.name, data.link, data.videoLink, index);
+            tableBody.appendChild(row);
+        });
+
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

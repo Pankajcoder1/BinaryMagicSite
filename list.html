@@ -17,7 +17,7 @@
     <!-- SEO stuff end -->
 
     <!-- Title stuff -->
-    <title>STL Sheet by Binary Magic (Pankaj Kumar) </title>
+    <title>List Container |STL Sheet by Binary Magic (Pankaj Kumar) </title>
     <link rel="icon" href="image/BinaryMagic-circle.png" type="image/x-icon">
 
     <!-- cdn link -->
@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/generateTableRow.js"></script>
 
     <style>
 
@@ -179,137 +180,8 @@
                                         <th scope="col" class="text-center">Video Solution</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                            
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/palindrome-linked-list/" target="_blank" title="Question Link">Palindrome
-                                                Linked List</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank" title="Question Link">Merge Two
-                                                Sorted Lists</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
 
-                            
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/" target="_blank"
-                                                title="Question Link">
-                                                Convert Binary Number in a Linked List to Integer
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank" title="Question Link">
-                                                Reverse Linked List
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">5</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/design-browser-history/" target="_blank" title="Question Link">
-                                                Design Browser History
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                            
-                                    <tr>
-                                        <th scope="row">6</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/linked-list-random-node/" target="_blank" title="Question Link">Linked
-                                                List Random Node</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">7</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/" target="_blank"
-                                                title="Question Link">Populating Next Right Pointers in Each Node II</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">8</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/" target="_blank"
-                                                title="Question Link">Remove Nth Node From End of List</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">9</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/design-a-text-editor/" target="_blank" title="Question Link">Design a
-                                                Text Editor</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">10</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/merge-k-sorted-lists/" target="_blank" title="Question Link">Merge k
-                                                Sorted Lists</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                            
-                                </tbody>
+                                <tbody id="table-body"></tbody>
                             </table>
                         </div>
 
@@ -334,6 +206,73 @@
         </div>
     </footer>
     <!-- footer section end -->
+
+    <script>
+        // Define an array of objects with the question and video data
+        const questionData = [
+             {
+                name: "Palindrome Linked List",
+                link: "https://leetcode.com/problems/palindrome-linked-list/",
+                videoLink: "#"
+            },
+            {
+                name: "Merge Two Sorted Lists",
+                link: "https://leetcode.com/problems/merge-two-sorted-lists/",
+                videoLink: "#"
+            },
+            {
+                name: "Convert Binary Number in a Linked List to Integer",
+                link: "https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/",
+                videoLink: "#"
+            },
+            {
+                name: "Reverse Linked List",
+                link: "https://leetcode.com/problems/reverse-linked-list/",
+                videoLink: "#"
+            },
+            {
+                name: "Design Browser History",
+                link: "https://leetcode.com/problems/design-browser-history/",
+                videoLink: "#"
+            },
+            {
+                name: 'Linked List Random Node',
+                link: 'https://leetcode.com/problems/linked-list-random-node/',
+                videoLink: "#"
+            },
+            {
+                name: 'Populating Next Right Pointers in Each Node II',
+                link: 'https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/',
+                videoLink: "#"
+            },
+            {
+                name: 'Remove Nth Node From End of List',
+                link: 'https://leetcode.com/problems/remove-nth-node-from-end-of-list/',
+                videoLink: "#"
+            },
+            {
+                name: 'Design a Text Editor',
+                link: 'https://leetcode.com/problems/design-a-text-editor/',
+                videoLink: "#"
+            },
+            {
+                name: 'Merge k Sorted Lists',
+                link: 'https://leetcode.com/problems/merge-k-sorted-lists/',
+                videoLink: "#"
+            },
+        ];
+
+
+        // Get a reference to the table body element
+        const tableBody = document.getElementById('table-body');
+
+        // Loop through the question data and generate a table row for each one
+        questionData.forEach((data, index) => {
+            const row = generateTableRow(data.name, data.link, data.videoLink, index);
+            tableBody.appendChild(row);
+        });
+
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
