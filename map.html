@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/generateTableRow.js"></script>
+
 
     <style>
 
@@ -211,38 +213,8 @@
                                         <th scope="col" class="text-center">Video Solution</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/linked-list-cycle/" target="_blank"
-                                                title="Question Link">
-                                                Linked List Cycle
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="https://youtu.be/dNZGfwXyMRE" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>
-                                            <a href="" target="_blank"
-                                                title="Question Link">
-                                                ----
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
+                                <tbody id="table-body"></tbody>
+                                
                             </table>
                         </div>
 
@@ -266,6 +238,28 @@
         </div>
     </footer>
     <!-- footer section end -->
+
+    <script>
+        // Define an array of objects with the question and video data
+        const questionData = [
+            {
+                question: 'Linked List Cycle',
+                questionLink: 'https://leetcode.com/problems/linked-list-cycle/',
+                videoLink: 'https://youtu.be/dNZGfwXyMRE'
+            },
+
+        ];
+
+        // Get a reference to the table body element
+        const tableBody = document.getElementById('table-body');
+
+        // Loop through the question data and generate a table row for each one
+        questionData.forEach((data, index) => {
+            const row = generateTableRow(data.question, data.questionLink, data.videoLink, index);
+            tableBody.appendChild(row);
+        });
+
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

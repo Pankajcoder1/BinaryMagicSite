@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/generateTableRow.js"></script>
 
     <style>
 
@@ -155,129 +156,8 @@
                                         <th scope="col" class="text-center">Video Solution</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                            
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>
-                                            <a href="https://practice.geeksforgeeks.org/problems/deque-implementations/1" target="_blank"
-                                                title="Question Link">Deque Implementations</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
 
-                            
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>
-                                            <a href="https://www.hackerearth.com/problem/algorithm/double-ended-queue/" target="_blank"
-                                                title="Question Link">Double Ended Queue</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>
-                                            <a href="https://www.hackerrank.com/challenges/deque-stl/problem" target="_blank"
-                                                title="Question Link">Deque-STL</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>
-                                            <a href="https://codeforces.com/problemset/problem/1579/E1" target="_blank" title="Question Link">Permutation
-                                                Minimization by Deque</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                            
-                                    <tr>
-                                        <th scope="row">5</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/design-circular-deque/" target="_blank" title="Question Link">Design Circular Deque</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link"><i class="fa fa-youtube-play"></i></a>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <th scope="row">6</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/find-consecutive-integers-from-a-data-stream/" target="_blank"
-                                                title="Question Link">Find Consecutive Integers from a Data Stream</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link"><i class="fa fa-youtube-play"></i></a>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <th scope="row">7</th>
-                                        <td>
-                                            <a href="https://www.codechef.com/problems/REVERSE" target="_blank" title="Question Link">Chef and Reversing</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link"><i class="fa fa-youtube-play"></i></a>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <th scope="row">8</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/design-front-middle-back-queue/description/" target="_blank"
-                                                title="Question Link">Design Front Middle Back Queue</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link"><i class="fa fa-youtube-play"></i></a>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <th scope="row">9</th>
-                                        <td>
-                                            <a href="https://codeforces.com/problemset/problem/1179/A" target="_blank" title="Question Link">Valeriy and Deque</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link"><i class="fa fa-youtube-play"></i></a>
-                                        </td>
-                                    </tr>
-                            
-                                    <tr>
-                                        <th scope="row">10</th>
-                                        <td>
-                                            <a href="https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/description/" target="_blank"
-                                                title="Question Link">Shortest Subarray with Sum at Least K</a>
-                                        </td>
-                                        <td>
-                                            <a href="" target="_blank" title="Video Link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                            
-                                </tbody>
+                                <tbody id="table-body"></tbody>
                             </table>
                         </div>
 
@@ -302,6 +182,73 @@
         </div>
     </footer>
     <!-- footer section end -->
+
+    <script>
+        // Define an array of objects with the question and video data
+        const questionData = [
+            {
+                name: "Deque Implementations",
+                link: "https://practice.geeksforgeeks.org/problems/deque-implementations/1",
+                videoLink: "#"
+            },
+            {
+                name: "Double Ended Queue",
+                link: "https://www.hackerearth.com/problem/algorithm/double-ended-queue/",
+                videoLink: "#"
+            },
+            {
+                name: "Deque-STL",
+                link: "https://www.hackerrank.com/challenges/deque-stl/problem",
+                videoLink: "#"
+            },
+            {
+                name: "Permutation Minimization by Deque",
+                link: "https://codeforces.com/problemset/problem/1579/E1",
+                videoLink: "#"
+            },
+            {
+                name: "Design Circular Deque",
+                link: "https://leetcode.com/problems/design-circular-deque/",
+                videoLink: "#"
+            },
+            {
+                name: "Find Consecutive Integers from a Data Stream",
+                link: "https://leetcode.com/problems/find-consecutive-integers-from-a-data-stream/",
+                videoLink: "#"
+            },
+            {
+                name: "Chef and Reversing",
+                link: "https://www.codechef.com/problems/REVERSE",
+                videoLink: "#"
+            },
+            {
+                name: "Design Front Middle Back Queue",
+                link: "https://leetcode.com/problems/design-front-middle-back-queue/description/",
+                videoLink: "#"
+            },
+            {
+                name: "Valeriy and Deque",
+                link: "https://codeforces.com/problemset/problem/1179/A",
+                videoLink: "#"
+            },
+            {
+                name: "Shortest Subarray with Sum at Least K",
+                link: "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/description/",
+                videoLink: "#"
+            }
+
+        ];
+
+        // Get a reference to the table body element
+        const tableBody = document.getElementById('table-body');
+
+        // Loop through the question data and generate a table row for each one
+        questionData.forEach((data, index) => {
+            const row = generateTableRow(data.name, data.link, data.videoLink, index);
+            tableBody.appendChild(row);
+        });
+
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
