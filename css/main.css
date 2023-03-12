@@ -18,21 +18,94 @@
     background-color: green;
 }
 
-.card{
+.card {
     border-radius: 5px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
 }
 
-.card-body .btn{
+.card-body .btn {
     background-color: #fff;
     border-radius: 5px;
     border: solid 2px #9acd32;
     color: green;
 }
 
-.card:hover .card-body .btn{
+.card:hover .card-body .btn {
     background-color: green;
     border: solid 1.5px green;
     font-weight: bold;
     color: #fff;
 }
+
+/* css start for reach out to me section*/
+
+.reach-out-to-me {
+    background-color: #d2e6ed;
+    padding: 50px;
+    min-height: 160px;
+}
+
+.section-heading {
+    height: 50px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.reach-out-to-me-inner-div {
+    padding-top: 10px;
+}
+
+.reach-out-to-me-inner-div ul {
+    list-style-type: none;
+}
+
+.reach-out-to-me-inner-div ul li {
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.reach-out-to-me-inner-div ul li a i {
+    font-size: 30px;
+    color: #000;
+}
+
+.reach-out-to-me-inner-div ul li a img {
+    margin-bottom: 10px;
+}
+
+.reach-out-to-me-inner-div ul li:nth-child(1):hover i {
+    color: red;
+}
+
+.reach-out-to-me-inner-div ul li:nth-child(2):hover i {
+    color: #0072b1;
+}
+
+.reach-out-to-me-inner-div ul li:nth-child(3):hover i {
+    color: #bc2a8d;
+}
+
+
+@media(max-width: 575px) {
+    .reach-out-to-me {
+        padding: 30px;
+    }
+
+    .section-heading {
+        height: 30px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .reach-out-to-me-inner-div ul li {
+        display: inline;
+        margin-left: auto;
+    }
+
+    .reach-out-to-me-inner-div ul li a i {
+        font-size: 28px;
+    }
+}
+
+/* css for reach out to me section end here */
