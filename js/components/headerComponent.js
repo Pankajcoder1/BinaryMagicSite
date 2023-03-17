@@ -48,7 +48,7 @@ function headerComponents() {
   // Add the links to the menu
   const links = [
     {
-      href: "https://www.youtube.com/@binmagic",
+      href: "https://www.youtube.com/@binmagic?sub_confirmation=1",
       text: "YouTube Channel",
       target: "_blank",
     },
