@@ -53,13 +53,8 @@ function headerComponents() {
       target: "_blank",
     },
     {
-      href: "https://www.linkedin.com/in/pankajcoder1/",
-      text: "LinkedIn",
-      target: "_blank",
-    },
-    {
-      href: "https://github.com/Pankajcoder1",
-      text: "Github",
+      href: "https://www.linkedin.com/company/binarymagic/",
+      text: "LinkedIn Page",
       target: "_blank",
     },
     {

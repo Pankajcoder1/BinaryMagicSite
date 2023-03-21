@@ -60,10 +60,6 @@ body {
     }
 }
 
-.page-main-div {
-    min-height: 95vh;
-}
-
 .page-title-div {
     padding: 25px;
     margin-bottom: 45px;
@@ -99,6 +95,33 @@ td:nth-child(3) {
     width: 10%;
 }
 
+.learn-more-from-us .card{
+    width: 30rem;
+}
+
+@media(max-width: 1200px){
+    .learn-more-from-us .card{
+        width: 25rem;
+    }
+}
+
+@media(max-width: 992px) {
+    .learn-more-from-us .card {
+        width: 25rem;
+    }
+}
+
+@media(max-width: 576px) {
+    .learn-more-from-us .card {
+        width: 18rem;
+    }
+}
+
+.card h3{
+    color: #ee5e5e;
+    font-size: 20px;
+    font-weight: bold;
+}
 
 .modern-list {
     list-style: none;
