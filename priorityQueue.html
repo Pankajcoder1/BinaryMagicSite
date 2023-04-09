@@ -8,21 +8,20 @@
 <head>
     <!-- SEO stuff start -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="STL Sheet | list Container - practice coding questions of C++ array container here, free">
+    <meta name="title" content="STL Sheet | priority queue Container - practice coding questions of C++ array container here, free">
     <meta name="description"
-        content="Check out some of the best programming questions you should practice to get better at STL list container">
-    <meta name="keywords" content="stl,c++,progammming question,stl sheet,stl container, binarymagic, list">
+        content="Check out some of the best programming questions you should practice to get better at STL priority queue container">
+    <meta name="keywords" content="stl,c++,progammming question,stl sheet,stl container, binarymagic, priority queue">
     <meta name="robots" content="index,follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <meta name="author" content="binarymagic (pankaj kumar)">
     
-    <link rel="canonical" href="https://binarymagic.in/list.html">
+    <link rel="canonical" href="https://binarymagic.in/priority_queue.html">
     <!-- SEO stuff end -->
     
     <!-- Title stuff -->
-    <title>STL Sheet | list Container - practice coding questions of C++ list container here, free</title>
-
+    <title>STL Sheet | priority queue Container - practice coding questions of C++ priority queue container here, free</title>
 
     <link rel="icon" href="image/BinaryMagic-logo.png" type="image/x-icon">
 
@@ -35,7 +34,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/generateTableRow.js"></script>
     <script src="./js/components/headerComponent.js"></script>
-
 
     <style>
 
@@ -59,79 +57,103 @@
 
         <div class="page-title-div">
             <div class="container">
-                <h1 class="text-center">List questions</h1>
+                <h1 class="text-center">Priority Queue questions</h1>
             </div>
         </div>
 
         <div class="row">
         
             <div class="col-md">
-                <h3>Common doubt in List 👇</h3>
+                <h3>Common doubt in Queue 👇</h3>
                 <ol class="modern-list">
                     <li>
-            
+        
                         <div class="modern-list-item">
                             <a class="modern-list-item-name" data-toggle="collapse" href="#firstQuestion" role="button"
                                 aria-controls="firstQuestion">
-                                What is list ? <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                What is priority queue ? <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
                             <div class="modern-list-item-description collapse show" id="firstQuestion">
-                                In simple term list is <b class="important-point">implementation of doubly linked list</b> data structure.
+                                Priority Queue container is <b class="important-point">implementation of heap data structure</b>, which <b class="important-point">place highest</b>/lowest (based of types) <b class="important-point">priority element at top</b>.
                             </div>
                         </div>
-            
-            
+        
                         <div class="modern-list-item">
                             <a class="modern-list-item-name" data-toggle="collapse" href="#secondQuestion" role="button"
                                 aria-expanded="false" aria-controls="secondQuestion">
-                                What is forward list ? <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                Main operation on priority queue container <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
                             <div class="modern-list-item-description collapse" id="secondQuestion">
-                                In simple term forward list is <b class="important-point">implementation of singly linked list</b> data structure.
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <b>size()</b>: return size of priority queue.
+                                        </div>
+                                    </li>
+                                
+                                    <li>
+                                        <div>
+                                            <b>empty()</b>: check if priority queue is empty or not, return boolean value accordingly.
+                                        </div>
+                                    </li>
+                                
+                                    <li>
+                                        <div>
+                                            <b>top()</b>: return top element of priority queue.
+                                        </div>
+                                    </li>
+                                
+                                    <li>
+                                        <div>
+                                            <b>push(element)</b>: add a element to top of priority queue.
+                                        </div>
+                                    </li>
+                                
+                                    <li>
+                                        <div>
+                                            <b>pop()</b>: erase top element of priority queue.
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-            
+        
                         <div class="modern-list-item">
                             <a class="modern-list-item-name" data-toggle="collapse" href="#thirdQuestion" role="button"
                                 aria-expanded="false" aria-controls="thirdQuestion">
-                                Difference between list and forward list <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                Syntax for max heap <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
                             <div class="modern-list-item-description collapse" id="thirdQuestion">
-                                The key differences between <i>list</i> and <i>forward_list </i>:
-                                <div>
-                                    <span class="pill">Bidirectional vs. unidirectional</span>
-                                    <span class="pill">Space Efficiency</span>
+                                <div class="modern-code-block">
+                                    <code>priority_queue&lt;int&gt; pq;</code><br>
                                 </div>
+                                
                             </div>
                         </div>
+
                         <div class="modern-list-item">
                             <a class="modern-list-item-name" data-toggle="collapse" href="#fourthQuestion" role="button" aria-expanded="false"
                                 aria-controls="fourthQuestion">
-                                Use map inside list, syntax<i class="fa fa-caret-down" aria-hidden="true"></i>
+                                Syntax for min heap <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
                             <div class="modern-list-item-description collapse" id="fourthQuestion">
                                 <div class="modern-code-block">
-                                    <code>list&lt;map&lt;int, string&gt;&gt; myList;</code><br>
-                                    <code>map&lt;int, string&gt; myMap1 = {{1, "One"}, {2, "Two"}, {3, "Three"}};</code><br>
-                                    <code>myList.push_back(myMap1);</code><br>
+                                    <code>priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt;&gt; pq;</code><br>
                                 </div>
                             </div>
-                        </div>
-            
+                        </div>        
                     </li>
                 </ol>
-            
+        
             </div>
         
             <div class="col-md">
                 <div class="embed-responsive embed-responsive-16by9 text-center container">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1JeLxbD1ruk"></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jzQqlYlZUuA"></iframe>
                 </div>
             </div>
         </div>
         <br>
-
-        
 
         <!-- Page Heading End -->
 
@@ -153,7 +175,6 @@
                                         <th scope="col" class="text-center">Video Solution</th>
                                     </tr>
                                 </thead>
-
                                 <tbody id="table-body"></tbody>
                             </table>
                         </div>
@@ -188,49 +209,69 @@
     <script>
         // Define an array of objects with the question and video data
         const questionData = [
-             {
-                name: "Palindrome Linked List",
-                link: "https://leetcode.com/problems/palindrome-linked-list/",
+            {
+                name: "Kth Largest Element in a Stream",
+                link: "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
                 videoLink: "#"
             },
             {
-                name: "Merge Two Sorted Lists",
-                link: "https://leetcode.com/problems/merge-two-sorted-lists/",
+                name: "Little Elephant and Lemonade",
+                link: "https://www.codechef.com/problems/LELEMON",
                 videoLink: "#"
             },
             {
-                name: "Convert Binary Number in a Linked List to Integer",
-                link: "https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/",
+                name: "Koxia and Whiteboards",
+                link: "https://codeforces.com/problemset/problem/1770/A",
                 videoLink: "#"
             },
             {
-                name: "Reverse Linked List",
-                link: "https://leetcode.com/problems/reverse-linked-list/",
+                name: "Minimum Operations to Halve Array Sum",
+                link: "https://leetcode.com/problems/minimum-operations-to-halve-array-sum/description/",
                 videoLink: "#"
             },
             {
-                name: "Design Browser History",
-                link: "https://leetcode.com/problems/design-browser-history/",
+                name: "Productive Meeting",
+                link: "https://codeforces.com/contest/1579/problem/D",
                 videoLink: "#"
             },
             {
-                name: 'Linked List Random Node',
-                link: 'https://leetcode.com/problems/linked-list-random-node/',
+                name: 'Maximum Product After K Increments',
+                link: 'https://leetcode.com/problems/maximum-product-after-k-increments/',
                 videoLink: "#"
             },
             {
-                name: 'Populating Next Right Pointers in Each Node II',
-                link: 'https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/',
+                name: 'Maximum Average Pass Ratio',
+                link: 'https://leetcode.com/problems/maximum-average-pass-ratio/',
                 videoLink: "#"
             },
             {
-                name: 'Remove Nth Node From End of List',
-                link: 'https://leetcode.com/problems/remove-nth-node-from-end-of-list/',
+                name: 'Alice and the Cake',
+                link: 'https://codeforces.com/contest/1654/problem/C',
                 videoLink: "#"
             },
             {
-                name: 'Design a Text Editor',
-                link: 'https://leetcode.com/problems/design-a-text-editor/',
+                name: 'Total Cost to Hire K Workers',
+                link: 'https://leetcode.com/problems/total-cost-to-hire-k-workers/',
+                videoLink: "#"
+            },
+            {
+                name: 'Tree Infection',
+                link: 'https://codeforces.com/contest/1665/problem/C',
+                videoLink: "#"
+            },
+            {
+                name: 'Single-Threaded CPU',
+                link: 'https://leetcode.com/problems/single-threaded-cpu/',
+                videoLink: "#"
+            },
+            {
+                name: 'Divide Intervals Into Minimum Number of Groups',
+                link: 'https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/',
+                videoLink: "#"
+            },
+            {
+                name: 'Minimize Deviation in Array',
+                link: 'https://leetcode.com/problems/minimize-deviation-in-array/',
                 videoLink: "#"
             },
             {
@@ -238,8 +279,12 @@
                 link: 'https://leetcode.com/problems/merge-k-sorted-lists/',
                 videoLink: "#"
             },
+            {
+                name: 'Minimum Deletions to Make Array Divisible',
+                link: 'https://leetcode.com/problems/minimum-deletions-to-make-array-divisible/',
+                videoLink: "#"
+            }
         ];
-
 
         // Get a reference to the table body element
         const tableBody = document.getElementById('table-body');
