@@ -17,7 +17,7 @@ function headerComponents() {
   logoLink.classList.add("navbar-brand");
 
   const logoImg = document.createElement("img");
-  logoImg.src = "image/BinaryMagic-circle.png";
+  logoImg.src = "image/BinaryMagic-logo.png";
   logoImg.alt = "logo";
   logoImg.style.width = "40px";
 
