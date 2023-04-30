@@ -48,8 +48,8 @@ function headerComponents() {
   // Add the links to the menu
   const links = [
     {
-      href: "https://binarymagic.in/index.php/blog/",
-      text: "Blog",
+      href: "https://binarymagic.in/index.php/blogs/",
+      text: "Blog Page",
       target: "_blank",
     },
     {
