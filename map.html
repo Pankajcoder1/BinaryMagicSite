@@ -21,7 +21,7 @@
     <!-- SEO stuff end -->
     
     <!-- Title stuff -->
-    <title>STL Sheet | map Container - practice coding questions of C++ map container here, free</title>
+    <title>STL Sheet | Map Container - practice coding questions of C++ map container here, free</title>
 
     <link rel="icon" href="image/BinaryMagic-logo.png" type="image/x-icon">
 
@@ -71,12 +71,10 @@
                         <div class="modern-list-item">
                             <a class="modern-list-item-name" data-toggle="collapse" href="#firstQuestion" role="button"
                                 aria-controls="firstQuestion">
-                                About stack container <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                About map container <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
                             <div class="modern-list-item-description collapse show" id="firstQuestion">
-                                STL provide stack container which is just implementation of stack data structure, which
-                                <b class="important-point">allow to perform LIFO (last in first out) operation</b> on
-                                it.
+                                STL container which <b class="important-point">store data in key value pair where key will be unique</b> in nature. By <b class="important-point">default keys are sorted in ascending order</b>. Internally it is <b class="important-point">implemented via tree</b> and that's why it can do insertion and other operation in <b class="important-point">O(logn) time</b>.
                             </div>
                         </div>
 
@@ -84,14 +82,46 @@
                         <div class="modern-list-item">
                             <a class="modern-list-item-name" data-toggle="collapse" href="#secondQuestion" role="button"
                                 aria-expanded="false" aria-controls="secondQuestion">
-                                Main operation on stack container <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                Main operation on map container <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
                             <div class="modern-list-item-description collapse" id="secondQuestion">
 
                                 <ul>
                                     <li>
                                         <div>
-                                            <b>size()</b>: return size of stack.
+                                            <b>lower_bound(k)</b>: Return an iterator of first pair whose key >= 'k' if such pair exist otherwise return key
+                                            as 'no,of element' with value '0'.
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div>
+                                            <b>upper_bound(k)</b>: Return an iterator of immediate next pair whose key is greater than 'k' if such pair
+                                            exist otherwise return key as 'no,of element' with value
+                                            '0'.
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div>
+                                            <b>erase()</b>: erase element from map if present otherwise do nothing. Their is two version of this operation.
+                                            <ol>
+                                                <li>erase(key) -> erase key-value pair with given key.</li>
+                                                <li>erase(iterator) -> erase key-value pair pointed by given iterator.</li>
+                                            </ol>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div>
+                                            <b>find(k)</b>: Return an iterator of a key-value pair where key = 'k' in the map if found, else return end
+                                            iterator.
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div>
+                                            <b>size()</b>: return size of map.
                                         </div>
                                     </li>
 
@@ -101,24 +131,6 @@
                                             accordingly.
                                         </div>
                                     </li>
-
-                                    <li>
-                                        <div>
-                                            <b>top()</b>: return top element of stack.
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div>
-                                            <b>push(element)</b>: add a element to top of stack.
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div>
-                                            <b>pop()</b>: erase top element of stack.
-                                        </div>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -126,31 +138,44 @@
                         <div class="modern-list-item">
                             <a class="modern-list-item-name" data-toggle="collapse" href="#thirdQuestion" role="button"
                                 aria-expanded="false" aria-controls="thirdQuestion">
-                                Difference between stack and queue ?<i class="fa fa-caret-down" aria-hidden="true"></i>
+                                Difference between map and unordered map ?<i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
                             <div class="modern-list-item-description collapse" id="thirdQuestion">
-                                Stack follow LIFO (last in first out) principle where as queue follow FIFO (first in
-                                first out) principle.
+                                <ol>
+                                    <li>
+                                        <strong>map:</strong>
+                                        <ul>
+                                            <li>Uses a self-balancing binary search tree</li>
+                                            <li>Stores key-value pairs in a sorted order</li>
+                                            <li>Logarithmic time complexity for operations (O(log n))</li>
+                                            <li>Keys are always sorted</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>unordered_map:</strong>
+                                        <ul>
+                                            <li>Uses a hash table</li>
+                                            <li>Does not maintain any particular order</li>
+                                            <li>Constant time complexity for operations on average (O(1))</li>
+                                            <li>Faster lookup times but no specific order guaranteed</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+
                             </div>
                         </div>
 
                         <div class="modern-list-item">
                             <a class="modern-list-item-name" data-toggle="collapse" href="#fourthQuestion" role="button"
                                 aria-expanded="false" aria-controls="fourthQuestion">
-                                Use vector inside stack, syntax<i class="fa fa-caret-down" aria-hidden="true"></i>
+                                Store key of map in descreasing order<i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
                             <div class="modern-list-item-description collapse" id="fourthQuestion">
                                 <div class="modern-code-block">
-                                    <code>stack&lt;vector&lt;int&gt;&gt; myStack;</code><br>
-                                    <code>vector&lt;int&gt; v = {1, 2, 3, 4, 5};</code><br>
-                                    <code>myStack.push(v);</code><br>
-                                    <code>vector&lt;int&gt; v2 = myStack.top();</code><br>
-                                    <code>myStack.pop();</code><br>
+                                    <code>map&lt;int, string, greater&lt;int&gt;&gt; mymap;</code><br>
                                 </div>
-
                             </div>
                         </div>
-
                     </li>
                 </ol>
 
@@ -158,7 +183,7 @@
 
             <div class="col-md">
                 <div class="embed-responsive embed-responsive-16by9 text-center container">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-uV5G_blFlc"></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQvJr6vnxck"></iframe>
                 </div>
             </div>
         </div>
@@ -227,6 +252,36 @@
                 question: 'Math',
                 questionLink: 'https://codeforces.com/contest/1062/problem/B/',
                 videoLink: 'https://youtu.be/HfgcTWiP8Vs'
+            },
+            {
+                question: 'Vitamins',
+                questionLink: 'https://codeforces.com/problemset/problem/1042/B',
+                videoLink: '#'
+            },
+            {
+                question: 'Prinzessin der Verurteilung',
+                questionLink: 'https://codeforces.com/problemset/problem/1536/B',
+                videoLink: '#'
+            },
+            {
+                question: '2-Letter Strings',
+                questionLink: 'https://codeforces.com/problemset/problem/1669/E',
+                videoLink: 'https://youtu.be/1IqNzHTnlm4'
+            },
+            {
+                question: 'Restore the Array From Adjacent Pairs',
+                questionLink: 'https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/',
+                videoLink: '#'
+            },
+            {
+                question: 'Word Ladder',
+                questionLink: 'https://leetcode.com/problems/word-ladder/',
+                videoLink: 'https://youtu.be/MbCov1OQYbI'
+            },
+            {
+                question: 'Minimum Window Substring',
+                questionLink: 'https://leetcode.com/problems/minimum-window-substring/',
+                videoLink: '#'
             },
         ];
 
