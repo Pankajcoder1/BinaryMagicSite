@@ -8,7 +8,8 @@
 <head>
     <!-- SEO stuff start -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="STL Sheet | map Container - practice coding questions of C++ array container here, free">
+    <meta name="title"
+        content="STL Sheet | map Container - practice coding questions of C++ array container here, free">
     <meta name="description"
         content="Check out some of the best programming questions you should practice to get better at STL map container">
     <meta name="keywords" content="stl,c++,progammming question,stl sheet,stl container, binarymagic, map">
@@ -16,10 +17,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <meta name="author" content="binarymagic (pankaj kumar)">
-    
+
     <link rel="canonical" href="https://binarymagic.in/map.html">
     <!-- SEO stuff end -->
-    
+
     <!-- Title stuff -->
     <title>STL Sheet | Map Container - practice coding questions of C++ map container here, free</title>
 
@@ -58,23 +59,25 @@
 
         <div class="page-title-div">
             <div class="container">
-                <h1 class="text-center">Map Questions</h1>
+                <h1 class="text-center">Set Questions</h1>
             </div>
         </div>
 
         <div class="row">
 
             <div class="col-md">
-                <h3>Common doubt in Map 👇</h3>
+                <h3>Common doubt in Set 👇</h3>
                 <ol class="modern-list">
                     <li>
                         <div class="modern-list-item">
                             <a class="modern-list-item-name" data-toggle="collapse" href="#firstQuestion" role="button"
                                 aria-controls="firstQuestion">
-                                About map container <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                About set container <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
                             <div class="modern-list-item-description collapse show" id="firstQuestion">
-                                STL container which <b class="important-point">store data in key value pair where key will be unique</b> in nature. By <b class="important-point">default keys are sorted in ascending order</b>. Internally it is <b class="important-point">implemented via tree</b> and that's why it can do insertion and other operation in <b class="important-point">O(logn) time</b>.
+                                The STL set container is a powerful data structure in C++ that stores a collection of <b class="important-point">unique
+                                    elements</b> in a <b class="important-point">sorted order</b>.
+                                It offers insertion, deletion, and search operations with log(n) complexity and internally it is inplemented via RB tree.
                             </div>
                         </div>
 
@@ -82,52 +85,55 @@
                         <div class="modern-list-item">
                             <a class="modern-list-item-name" data-toggle="collapse" href="#secondQuestion" role="button"
                                 aria-expanded="false" aria-controls="secondQuestion">
-                                Main operation on map container <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                Main operation on set container <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
                             <div class="modern-list-item-description collapse" id="secondQuestion">
 
                                 <ul>
                                     <li>
                                         <div>
-                                            <b>lower_bound(k)</b>: Return an iterator of first pair whose key >= 'k' if such pair exist otherwise return key
-                                            as 'size of map' with value '0'.
-                                        </div>
-                                    </li>
-                                    
-                                    <li>
-                                        <div>
-                                            <b>upper_bound(k)</b>: Return an iterator of immediate next pair whose key is greater than 'k' if such pair
-                                            exist otherwise return key as 'size of map' with value
-                                            '0'.
+                                            <b>lower_bound(ele)</b>: Return an iterator of first element whose value is >= 'ele' if
+                                            such element exist otherwise return size of container.
                                         </div>
                                     </li>
 
                                     <li>
                                         <div>
-                                            <b>erase()</b>: erase element from map if present otherwise do nothing. Their is two version of this operation.
+                                            <b>upper_bound(ele)</b>: Return an iterator of immediate next element whose value
+                                            is greater than 'ele' if such element
+                                            exist otherwise return size of container.
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div>
+                                            <b>erase()</b>: erase element from set if present otherwise do nothing.
+                                            Their is two version of this operation.
                                             <ol>
-                                                <li>erase(key) -> erase key-value pair with given key.</li>
-                                                <li>erase(iterator) -> erase key-value pair pointed by given iterator.</li>
+                                                <li>erase(ele) -> erase element with given value.</li>
+                                                <li>erase(iterator) -> erase element pointed by given iterator.
+                                                </li>
                                             </ol>
                                         </div>
                                     </li>
 
                                     <li>
                                         <div>
-                                            <b>find(k)</b>: Return an iterator of a key-value pair where key = 'k' in the map if found, else return 'end'
+                                            <b>find(ele)</b>: Return an iterator of a element whose value is = 'k' in
+                                            the container if found, else return 'end'
                                             iterator.
                                         </div>
                                     </li>
 
                                     <li>
                                         <div>
-                                            <b>size()</b>: return size of map.
+                                            <b>size()</b>: return size of set.
                                         </div>
                                     </li>
 
                                     <li>
                                         <div>
-                                            <b>empty()</b>: check if map is empty or not, return boolean value
+                                            <b>empty()</b>: check if set is empty or not, return boolean value
                                             accordingly.
                                         </div>
                                     </li>
@@ -138,21 +144,22 @@
                         <div class="modern-list-item">
                             <a class="modern-list-item-name" data-toggle="collapse" href="#thirdQuestion" role="button"
                                 aria-expanded="false" aria-controls="thirdQuestion">
-                                Difference between map and unordered map ?<i class="fa fa-caret-down" aria-hidden="true"></i>
+                                Difference between set and unordered set ?<i class="fa fa-caret-down"
+                                    aria-hidden="true"></i>
                             </a>
                             <div class="modern-list-item-description collapse" id="thirdQuestion">
                                 <ol>
                                     <li>
-                                        <strong>map:</strong>
+                                        <strong>set:</strong>
                                         <ul>
                                             <li>Uses a self-balancing binary search tree</li>
-                                            <li>Stores key-value pairs in a sorted order</li>
+                                            <li>Stores element in a sorted order</li>
                                             <li>Logarithmic time complexity for operations (O(log n))</li>
-                                            <li>Keys are always sorted, by default in ascending order.</li>
+                                            <li>Elements are always sorted, by default in ascending order.</li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <strong>unordered_map:</strong>
+                                        <strong>unordered_set:</strong>
                                         <ul>
                                             <li>Uses a hash table</li>
                                             <li>Does not maintain any particular order</li>
@@ -168,11 +175,11 @@
                         <div class="modern-list-item">
                             <a class="modern-list-item-name" data-toggle="collapse" href="#fourthQuestion" role="button"
                                 aria-expanded="false" aria-controls="fourthQuestion">
-                                Store key of map in descreasing order<i class="fa fa-caret-down" aria-hidden="true"></i>
+                                Store element of set in descreasing order<i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
                             <div class="modern-list-item-description collapse" id="fourthQuestion">
                                 <div class="modern-code-block">
-                                    <code>map&lt;int, string, greater&lt;int&gt;&gt; mymap;</code><br>
+                                    <code>set&lt;int,greater&lt;int&gt;&gt; s;</int></code><br>
                                 </div>
                             </div>
                         </div>
@@ -183,7 +190,7 @@
 
             <div class="col-md">
                 <div class="embed-responsive embed-responsive-16by9 text-center container">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQvJr6vnxck"></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5Hu11Zm1hCg"></iframe>
                 </div>
             </div>
         </div>
@@ -210,7 +217,7 @@
                                     </tr>
                                 </thead>
                                 <tbody id="table-body"></tbody>
-                                
+
                             </table>
                         </div>
 
@@ -244,43 +251,28 @@
         // Define an array of objects with the question and video data
         const questionData = [
             {
-                question: 'Linked List Cycle',
-                questionLink: 'https://leetcode.com/problems/linked-list-cycle/',
-                videoLink: 'https://youtu.be/dNZGfwXyMRE'
-            },
-            {
-                question: 'Math',
-                questionLink: 'https://codeforces.com/contest/1062/problem/B/',
-                videoLink: 'https://youtu.be/HfgcTWiP8Vs'
-            },
-            {
-                question: 'Vitamins',
-                questionLink: 'https://codeforces.com/problemset/problem/1042/B',
+                question: 'Isomorphic Strings',
+                questionLink: 'https://leetcode.com/problems/isomorphic-strings/',
                 videoLink: '#'
             },
             {
-                question: 'Prinzessin der Verurteilung',
-                questionLink: 'https://codeforces.com/problemset/problem/1536/B',
+                question: 'Sort with Step',
+                questionLink: 'https://codeforces.com/problemset/problem/1823/B',
+                videoLink: 'https://youtu.be/pLaNjRWD4rU'
+            },
+            {
+                question: 'Valid Sudoku',
+                questionLink: 'https://leetcode.com/problems/valid-sudoku/',
                 videoLink: '#'
             },
             {
-                question: '2-Letter Strings',
-                questionLink: 'https://codeforces.com/problemset/problem/1669/E',
-                videoLink: 'https://youtu.be/1IqNzHTnlm4'
-            },
-            {
-                question: 'Restore the Array From Adjacent Pairs',
-                questionLink: 'https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/',
+                question: 'KAIBUNsyo',
+                questionLink: 'https://atcoder.jp/contests/abc206/tasks/abc206_d',
                 videoLink: '#'
             },
             {
-                question: 'Word Ladder',
-                questionLink: 'https://leetcode.com/problems/word-ladder/',
-                videoLink: 'https://youtu.be/MbCov1OQYbI'
-            },
-            {
-                question: 'Minimum Window Substring',
-                questionLink: 'https://leetcode.com/problems/minimum-window-substring/',
+                question: 'Count Unhappy Friends',
+                questionLink: 'https://leetcode.com/problems/count-unhappy-friends/',
                 videoLink: '#'
             }
         ];
